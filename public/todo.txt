@@ -1,0 +1,99 @@
+July 29th
+https://patrickhlauke.github.io/recaptcha/
+Create Selection component hierarchy:
+SelectContainer: Simple
+SelectPrompt: "Select all squares with (a) ... "If there are none, click skip"
+SelectGrid: Gap between images, 3x3 or 4x4
+SelectFooter: Just a reset button MUI button and skip/verify button
+
+July 31st
+Found cat picl
+Created single image mode for SelectGrid
+Created pic naming schema
+Added waldo pic and level 2
+Added fade out / fade in between levels
+
+August 1st
+Formatted level container padding / margin / border
+
+August 4th
+Fixed Game's vertical position on screen
+Added external content to index.html
+Made prime number images
+Added level 3
+Added levelData setup for SINGLE VS. MULTIPLE IMAGE MODE
+Made smooch image
+Added level 4
+Made famous people images
+Added level 5
+Made sandwich images
+Added level 6
+Added functionality for OPTIONAL SQUARES in multiple image mode
+Added code to conditionally change prompt text based on number of incorrect guesses
+
+August 8th
+Made chemical element images
+Added level 7
+Made loss image
+Added level 8
+Added code to conditionally change prompt text based on number of incorrect guesses
+Made emoji images
+Added level 9
+Made song images
+Added level 10
+Made state images
+Added level 11
+Made gifs
+Added level 12
+Made wordle images
+
+August 10th
+Combined wordle images
+Added level 13
+Found good I Spy image
+Made I Spy image
+Added level 14
+
+August 11th
+Made font images
+Added level 15
+Made pizza topping images
+Added level 16
+Made company logo images
+Added level 17
+Made sudoku image
+Added level 18
+Decided beatles animals
+
+August 12th
+Made animal images
+Added level 19
+Made egg bite images
+
+August 15th
+Added multiple image incorrect guess count handling
+Added level 20
+Made flag images
+Added level 21
+Found i spy 2 image
+Added level 22
+Found repeat images
+Added level 23
+Made letter images
+Added level 24
+Made earth image
+Added level 25
+Made EndScreen file
+
+~*~*~*~*~*~
+TODO:
+End screen: Humanity confirmed. Thank you!
+End links: Play Again, Share on Twitter, my twitter, my website homepage, buy me a coffee
+Reorder serious prompts based on difficulty
+Add playtest screen:
+1. Thank you for testing Not a Robot! Please let me know:
+2. Which prompts you skip (the Skip Prompt button will be removed for public release)
+3. Which prompts are most and least engaging
+Fix title and game sizing and spacing for mobile
+My own testing on phone / ipad / desktop
+Update my website's about page
