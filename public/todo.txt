@@ -85,6 +85,16 @@ Made earth image
 Added level 25
 Made EndScreen file
 
+August 16th
+Github madness
+Figured out image upload
+
+August 17th
+Added content to end screen
+Added buy me a coffee link
+Reordered serious prompts
+
+
 ~*~*~*~*~*~
 TODO:
 End screen: Humanity confirmed. Thank you!

@@ -137,6 +137,7 @@ const SelectContainer: React.FC<SelectContainerProps> = ({
         }, 1000);
       } else {
         setIsCorrect(false);
+        setIncorrectGuessCount((prev) => prev + 1);
         setTimeout(() => setIsCorrect(true), 250);
       }
     } else {
@@ -179,6 +180,7 @@ const SelectContainer: React.FC<SelectContainerProps> = ({
         }, 1000);
       } else {
         setIsCorrect(false);
+        setIncorrectGuessCount((prev) => prev + 1);
         setTimeout(() => setIsCorrect(true), 250);
       }
     }

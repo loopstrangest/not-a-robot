@@ -1,3 +1,5 @@
+/** @format */
+
 import * as React from "react";
 import StartBox from "./StartBox";
 import { useState } from "react";
@@ -34,7 +36,7 @@ import {
 import "../styles/GameStyles.css";
 
 const Game = () => {
-  const initialLevel = 0;
+  const initialLevel = 8;
   const [level, setLevel] = useState(initialLevel);
   const [fadeOutClass, setFadeOutClass] = useState("");
 
@@ -285,7 +287,7 @@ const Game = () => {
             levelData={levelData25}
           />
         ) : (
-          <EndScreen />
+          <EndScreen setLevel={setLevel} />
         )}
       </Box>
     </Container>
