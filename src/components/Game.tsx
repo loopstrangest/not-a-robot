@@ -5,6 +5,7 @@ import StartBox from "./StartBox";
 import { useState } from "react";
 import SelectContainer from "./SelectContainer";
 import EndScreen from "./EndScreen";
+import PlaytestScreen from "./PlaytestScreen";
 import { Box, Container, Typography } from "@mui/material";
 import {
   levelData1,
@@ -36,7 +37,7 @@ import {
 import "../styles/GameStyles.css";
 
 const Game = () => {
-  const initialLevel = 8;
+  const initialLevel = -1;
   const [level, setLevel] = useState(initialLevel);
   const [fadeOutClass, setFadeOutClass] = useState("");
 
@@ -71,6 +72,13 @@ const Game = () => {
           height: "22px",
           display: "block",
           textAlign: "center",
+          fontFamily: "'Orbitron', sans-serif", // Set Orbitron font here
+          fontSize: {
+            xs: "clamp(18px, 5vw, 24px)", // Adjust as needed
+            sm: "clamp(22px, 4vw, 28px)", // Adjust as needed
+            md: "clamp(26px, 3vw, 32px)", // Adjust as needed
+          },
+          whiteSpace: "nowrap", // Prevent wrapping to the next line
         }}
       >
         🤖 Not a Robot
@@ -82,7 +90,9 @@ const Game = () => {
           margin: "0 auto 60px",
         }}
       >
-        {level === 0 ? (
+        {level === -1 ? (
+          <PlaytestScreen setLevel={setLevel} />
+        ) : level === 0 ? (
           <Box className={`startBox ${fadeOutClass}`}>
             <StartBox setGameState={handleFadeOut} />
           </Box>

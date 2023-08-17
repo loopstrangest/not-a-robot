@@ -12,17 +12,15 @@ const EndScreen: React.FC<{ setLevel: (level: number) => void }> = ({
   setLevel,
 }) => {
   const [showMessage1, setShowMessage1] = useState(false);
-  const [showMessage2, setShowMessage2] = useState(false);
   const [showButton1, setShowButton1] = useState(false);
   const [showButton2, setShowButton2] = useState(false);
   const [showIcons, setShowIcons] = useState(false);
 
   useEffect(() => {
     setTimeout(() => setShowMessage1(true), 0);
-    setTimeout(() => setShowMessage2(true), 1000);
-    setTimeout(() => setShowButton1(true), 2000);
-    setTimeout(() => setShowButton2(true), 2500);
-    setTimeout(() => setShowIcons(true), 3000);
+    setTimeout(() => setShowButton1(true), 1500);
+    setTimeout(() => setShowButton2(true), 1750);
+    setTimeout(() => setShowIcons(true), 2000);
   }, []);
 
   return (
@@ -38,30 +36,33 @@ const EndScreen: React.FC<{ setLevel: (level: number) => void }> = ({
       }}
     >
       <Fade in={showMessage1}>
-        <Typography
+        <Box
           sx={{
-            fontSize: { xs: "18px", sm: "24px", md: "30px" },
-            textAlign: "center",
-            mb: 2,
+            border: "1px solid #267b30",
+            boxShadow: "3px 3px 5px 2px rgba(60,155,71,.2)",
+            backgroundColor: "#e3ffe3",
+            borderRadius: "10px",
+            p: 2, // padding for the inner content
+            mb: 2, // maintaining margin-bottom outside the Box
           }}
         >
-          Humanity confirmed!
-        </Typography>
-      </Fade>
-      <Fade in={showMessage2}>
-        <Typography
-          sx={{
-            fontSize: { xs: "18px", sm: "24px", md: "30px" },
-            textAlign: "center",
-            mb: 2,
-          }}
-        >
-          Thanks for playing 🤗
-        </Typography>
+          <Typography
+            sx={{
+              fontSize: { xs: "18px", sm: "24px", md: "30px" },
+              textAlign: "center",
+            }}
+          >
+            <strong>Congratulations!</strong>
+            <br />
+            Humanity confirmed.
+            <br />
+            Thank you for playing 🤗
+          </Typography>
+        </Box>
       </Fade>
       <Fade in={showButton1}>
         <Button
-          onClick={() => setLevel(1)}
+          onClick={() => setLevel(0)}
           sx={{
             mt: 2,
             mb: 2,
@@ -69,6 +70,9 @@ const EndScreen: React.FC<{ setLevel: (level: number) => void }> = ({
             color: "white",
             fontSize: { xs: "14px", sm: "16px", md: "18px" },
             "&:hover": { backgroundColor: "#1976d2" },
+            boxShadow: "2px 2px 8px rgba(0, 0, 0, 0.1)",
+            border: "1px solid #1a74c1",
+            textTransform: "none", // this is to prevent all caps
           }}
         >
           Play Again
@@ -88,13 +92,16 @@ const EndScreen: React.FC<{ setLevel: (level: number) => void }> = ({
             color: "white",
             fontSize: { xs: "14px", sm: "16px", md: "18px" },
             "&:hover": { backgroundColor: "#1976d2" },
+            boxShadow: "2px 2px 8px rgba(0, 0, 0, 0.1)",
+            border: "1px solid #1a74c1",
+            textTransform: "none", // this is to prevent all caps
           }}
         >
           Share on Twitter
         </Button>
       </Fade>
       <Fade in={showIcons}>
-        <Box display="flex" justifyContent="center" width="100%" mt={2}>
+        <Box display="flex" justifyContent="center" width="100%" mt={1}>
           <IconButton
             onClick={() =>
               window.open("https://twitter.com/strangestloop", "_blank")

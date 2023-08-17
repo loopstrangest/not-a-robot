@@ -93,7 +93,9 @@ August 17th
 Added content to end screen
 Added buy me a coffee link
 Reordered serious prompts
-
+Improved look of end screen elements
+Added playtest screen
+Updated title font
 
 ~*~*~*~*~*~
 TODO:
@@ -105,5 +107,6 @@ Add playtest screen:
 2. Which prompts you skip (the Skip Prompt button will be removed for public release)
 3. Which prompts are most and least engaging
 Fix title and game sizing and spacing for mobile
+Find a good font for the title
 My own testing on phone / ipad / desktop
 Update my website's about page
