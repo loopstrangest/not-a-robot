@@ -1,9 +1,15 @@
+/** @format */
+
 // SelectGrid.tsx
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Box, CSSObject } from "@mui/material";
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 type SelectGridProps = {
   gridSize: number;
+  squareSize: number;
+  originalImageSize: number;
   selected: boolean[];
   handleSelect: (index: number) => void;
   images: string[];
@@ -12,6 +18,8 @@ type SelectGridProps = {
 
 const SelectGrid: React.FC<SelectGridProps> = ({
   gridSize,
+  squareSize,
+  originalImageSize,
   selected,
   handleSelect,
   images,
@@ -23,18 +31,19 @@ const SelectGrid: React.FC<SelectGridProps> = ({
     <Box
       sx={{
         display: "grid",
-        gridTemplateColumns: `repeat(${rowsColumns}, 1fr)`,
-        gridTemplateRows: `repeat(${rowsColumns}, 1fr)`,
+        gridTemplateColumns: `repeat(${rowsColumns}, ${squareSize}px)`,
+        gridTemplateRows: `repeat(${rowsColumns}, ${squareSize}px)`,
         gap: "4px",
         boxSizing: "border-box",
       }}
     >
       {selected.map((isSelected, index) => {
         const style: CSSObject = {
-          width: "100px",
-          height: "100px",
+          width: `${squareSize}px`,
+          height: `${squareSize}px`,
           opacity: isSelected ? 0.4 : 1,
           backgroundColor: isSelected ? "lightgrey" : "white",
+          backgroundSize: `${squareSize}px`,
         };
 
         if (singleImageMode) {
@@ -42,14 +51,13 @@ const SelectGrid: React.FC<SelectGridProps> = ({
           const cols = rowsColumns;
           const row = Math.floor(index / rows);
           const col = index % cols;
-          const backgroundSize = `${cols * 100}% ${rows * 100}%`;
-          const backgroundPosition = `${(col / (cols - 1)) * 100}% ${
-            (row / (rows - 1)) * 100
-          }%`;
+
+          const backgroundPositionX = (col * originalImageSize) / cols;
+          const backgroundPositionY = (row * originalImageSize) / rows;
 
           style.backgroundImage = `url(${images[0]})`;
-          style.backgroundSize = backgroundSize;
-          style.backgroundPosition = backgroundPosition;
+          style.backgroundSize = `${originalImageSize}px ${originalImageSize}px`;
+          style.backgroundPosition = `-${backgroundPositionX}px -${backgroundPositionY}px`;
         } else {
           style.backgroundImage = `url(${images[index]})`;
         }

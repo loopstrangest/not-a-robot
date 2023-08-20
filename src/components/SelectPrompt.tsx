@@ -1,3 +1,5 @@
+/** @format */
+
 // SelectPrompt.tsx
 import * as React from "react";
 import { Typography } from "@mui/material";
@@ -23,7 +25,6 @@ const SelectPrompt: React.FC<SelectPromptProps> = ({
         padding: "10px",
         textAlign: "left",
         fontWeight: "bold",
-        fontSize: "14px",
         display: "block",
         lineHeight: "1rem",
         mb: 1,
@@ -31,13 +32,30 @@ const SelectPrompt: React.FC<SelectPromptProps> = ({
         whiteSpace: "normal",
       }}
     >
-      <Typography sx={{ fontSize: "14px", overflowWrap: "break-word" }}>
+      <Typography
+        sx={{
+          fontSize: {
+            xs: "12px",
+            sm: "12px",
+            md: "14px",
+          },
+          overflowWrap: "break-word",
+        }}
+      >
         Select all squares with {plural ? "" : "a"}
       </Typography>
       <Typography
         sx={{
-          lineHeight: "2rem",
-          fontSize: "28px",
+          lineHeight: {
+            xs: "1.5rem",
+            sm: "1.75rem",
+            md: "2rem",
+          },
+          fontSize: {
+            xs: "20px",
+            sm: "24px",
+            md: "28px",
+          },
           fontWeight: 900,
           overflowWrap: "break-word",
         }}
@@ -50,7 +68,11 @@ const SelectPrompt: React.FC<SelectPromptProps> = ({
       </Typography>
       <Typography
         sx={{
-          fontSize: "14px",
+          fontSize: {
+            xs: "12px",
+            sm: "12px",
+            md: "14px",
+          },
           opacity: isAnySelected ? 0.6 : 1,
           overflowWrap: "break-word",
         }}

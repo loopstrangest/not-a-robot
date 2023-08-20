@@ -72,13 +72,13 @@ const Game = () => {
           height: "22px",
           display: "block",
           textAlign: "center",
-          fontFamily: "'Orbitron', sans-serif", // Set Orbitron font here
+          fontFamily: "'Orbitron', sans-serif",
           fontSize: {
-            xs: "clamp(18px, 5vw, 24px)", // Adjust as needed
-            sm: "clamp(22px, 4vw, 28px)", // Adjust as needed
-            md: "clamp(26px, 3vw, 32px)", // Adjust as needed
+            xs: "clamp(24px, 10vw, 32px)",
+            sm: "clamp(28px, 15vw, 36px)",
+            md: "clamp(32px, 20vw, 40px)",
           },
-          whiteSpace: "nowrap", // Prevent wrapping to the next line
+          whiteSpace: "nowrap",
         }}
       >
         🤖 Not a Robot
@@ -86,7 +86,11 @@ const Game = () => {
       <Box
         sx={{
           position: "absolute",
-          top: "150px",
+          top: {
+            xs: "100px",
+            sm: "125px",
+            md: "150px",
+          },
           margin: "0 auto 60px",
         }}
       >

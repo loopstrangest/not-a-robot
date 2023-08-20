@@ -55,7 +55,7 @@ const SelectFooter: React.FC<SelectFooterProps> = ({
           fontWeight: 700,
           letterSpacing: -0.2,
           borderRadius: "2px",
-        }} // Set width to 50px
+        }}
       >
         {isCorrect ? isAnySelected ? "VERIFY" : "SKIP" : <CloseIcon />}
       </Button>

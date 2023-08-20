@@ -48,9 +48,9 @@ const PlaytestScreen: React.FC<{ setLevel: (level: number) => void }> = ({
             textAlign: "center",
           }}
         >
-          Thank you for playtesting Not a Robot!
+          Thank you for testing Not a Robot!
           <br />
-          Please set aside 15 minutes to play if possible.
+          Please set aside 15+ minutes to play.
           <br />
           Let me know which prompts are most and least engaging.
         </Typography>

@@ -30,8 +30,6 @@ const SelectContainer: React.FC<SelectContainerProps> = ({
   levelData,
 }) => {
   const gridSize = levelData.gridSize;
-
-  const [selectedImages, setSelectedImages] = useState<any[]>([]);
   const [selected, setSelected] = useState<boolean[]>(
     Array(gridSize).fill(false)
   );
@@ -45,7 +43,40 @@ const SelectContainer: React.FC<SelectContainerProps> = ({
   const [shuffledImageObjects, setShuffledImageObjects] = useState<
     typeof levelData.images
   >([]);
+  const [squareSize, setSquareSize] = useState(100);
+  const [originalImageSize, setOriginalImageSize] = useState(300);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    if (isMobile) {
+      if (gridSize === 25) {
+        setSquareSize(60);
+        setOriginalImageSize(300);
+      }
+      if (gridSize === 16) {
+        setSquareSize(80);
+        setOriginalImageSize(320);
+      }
+    } else {
+      setSquareSize(100);
+
+      if (gridSize === 25) {
+        setOriginalImageSize(500);
+      }
+      if (gridSize === 16) {
+        setOriginalImageSize(400);
+      }
+    }
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [isMobile, gridSize]);
   useEffect(() => {
     if (levelData) {
       if (levelData.singleImageMode) {
@@ -104,12 +135,10 @@ const SelectContainer: React.FC<SelectContainerProps> = ({
   }
 
   const isAnySelected = selected.includes(true);
-
   const side = Math.sqrt(gridSize);
-  const containerWidth = 100 * side + 10 + 4 * (side - 1);
+  const containerWidth = squareSize * side + 4 * (side - 1);
 
   const reset = () => {
-    setSelectedImages([]);
     setSelected(Array(gridSize).fill(false));
   };
 
@@ -207,6 +236,8 @@ const SelectContainer: React.FC<SelectContainerProps> = ({
       />
       <SelectGrid
         gridSize={gridSize}
+        squareSize={squareSize}
+        originalImageSize={originalImageSize}
         selected={selected}
         handleSelect={handleSelect}
         images={images}
