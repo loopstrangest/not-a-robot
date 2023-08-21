@@ -108,7 +108,13 @@ Created game social image
 Create game portfolio image
 Create about page share image
 
+August 21st
+
+
 ~*~*~*~*~*~
 TODO:
 Update my website's about page
+Add share images to my website
+Add game to my website
 My own testing on phone / ipad / desktop
+Soft launch with GYG / coders / Pranab

@@ -24,12 +24,12 @@ const PlaytestScreen: React.FC<{ setLevel: (level: number) => void }> = ({
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        width: "calc(100% - 20px)", // assuming you added 20px padding on both left and right
-        maxHeight: "calc(100vh - 20px)", // this takes the full height of the viewport and subtracts 40px (20px top and 20px bottom)
+        width: "calc(100% - 20px)",
+        maxHeight: "calc(100vh - 20px)",
         mt: 4,
         color: "black",
-        p: 2, // Add padding. This can be adjusted as per your preference
-        overflow: "auto", // Makes sure the content can scroll if it exceeds the box height
+        p: 2,
+        overflow: "auto",
       }}
     >
       <Box

@@ -42,8 +42,8 @@ const EndScreen: React.FC<{ setLevel: (level: number) => void }> = ({
             boxShadow: "3px 3px 5px 2px rgba(60,155,71,.2)",
             backgroundColor: "#e3ffe3",
             borderRadius: "10px",
-            p: 2, // padding for the inner content
-            mb: 2, // maintaining margin-bottom outside the Box
+            p: 2,
+            mb: 2,
           }}
         >
           <Typography
@@ -72,7 +72,7 @@ const EndScreen: React.FC<{ setLevel: (level: number) => void }> = ({
             "&:hover": { backgroundColor: "#1976d2" },
             boxShadow: "2px 2px 8px rgba(0, 0, 0, 0.1)",
             border: "1px solid #1a74c1",
-            textTransform: "none", // this is to prevent all caps
+            textTransform: "none",
           }}
         >
           Play Again
@@ -82,7 +82,7 @@ const EndScreen: React.FC<{ setLevel: (level: number) => void }> = ({
         <Button
           onClick={() =>
             window.open(
-              "https://twitter.com/intent/tweet?text=I demonstrated my humanity! Can you?&url=https://strangestloop.io/not-a-robot",
+              "https://twitter.com/intent/tweet?text=I proved I'm not a robot! Can you?&url=https://strangestloop.io/not-a-robot",
               "_blank"
             )
           }
@@ -94,7 +94,7 @@ const EndScreen: React.FC<{ setLevel: (level: number) => void }> = ({
             "&:hover": { backgroundColor: "#1976d2" },
             boxShadow: "2px 2px 8px rgba(0, 0, 0, 0.1)",
             border: "1px solid #1a74c1",
-            textTransform: "none", // this is to prevent all caps
+            textTransform: "none",
           }}
         >
           Share on Twitter
