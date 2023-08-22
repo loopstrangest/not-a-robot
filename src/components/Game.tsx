@@ -37,7 +37,7 @@ import {
 import "../styles/GameStyles.css";
 
 const Game = () => {
-  const initialLevel = -1;
+  const initialLevel = 0;
   const [level, setLevel] = useState(initialLevel);
   const [fadeOutClass, setFadeOutClass] = useState("");
 
