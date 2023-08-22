@@ -11,17 +11,19 @@ export const levelData1 = {
 };
 
 export const levelData2 = {
-  prompt: "waldos",
+  prompt: "Waldos",
   gridSize: 16,
   singleImageMode: true,
   images: ["/images/2/1.png"],
   correctAnswers: [4],
+  hintSite: "https://en.wikipedia.org/wiki/Where%27s_Wally%3F",
 };
 
 export const levelData3 = {
   prompt: "prime numbers",
   gridSize: 9,
   singleImageMode: false,
+  hintSite: "https://en.wikipedia.org/wiki/List_of_prime_numbers",
   images: [
     {
       image: "/images/3/1.png",
@@ -70,46 +72,47 @@ export const levelData4 = {
   correctAnswers: [7],
 };
 
-export const levelData17 = {
-  prompt: "people who were alive in 1955",
+export const levelData5 = {
+  prompt: "real company logos",
   gridSize: 9,
   singleImageMode: false,
+  hintSite: "https://www.youtube.com/watch?v=fwmn7v8KKrQ",
   images: [
     {
-      image: "/images/17/1.png",
+      image: "/images/5/1.png",
       isCorrect: true,
     },
     {
-      image: "/images/17/2.png",
-      isCorrect: true,
-    },
-    {
-      image: "/images/17/3.png",
-      isCorrect: true,
-    },
-    {
-      image: "/images/17/4.png",
-      isCorrect: true,
-    },
-    {
-      image: "/images/17/5.png",
-      isCorrect: true,
-    },
-    {
-      image: "/images/17/6.png",
-      isCorrect: true,
-    },
-    {
-      image: "/images/17/7.png",
+      image: "/images/5/2.png",
       isCorrect: false,
     },
     {
-      image: "/images/17/8.png",
+      image: "/images/5/3.png",
       isCorrect: false,
     },
     {
-      image: "/images/17/9.png",
+      image: "/images/5/4.png",
       isCorrect: false,
+    },
+    {
+      image: "/images/5/5.png",
+      isCorrect: false,
+    },
+    {
+      image: "/images/5/6.png",
+      isCorrect: true,
+    },
+    {
+      image: "/images/5/7.png",
+      isCorrect: true,
+    },
+    {
+      image: "/images/5/8.png",
+      isCorrect: false,
+    },
+    {
+      image: "/images/5/9.png",
+      isCorrect: true,
     },
   ],
 };
@@ -158,46 +161,47 @@ export const levelData6 = {
   ],
 };
 
-export const levelData11 = {
-  prompt: "chemical element abbreviations",
+export const levelData7 = {
+  prompt: "fonts displayed in their own typeface",
   gridSize: 9,
   singleImageMode: false,
+  hintSite: "https://www.fontshop.com/tryout",
   images: [
     {
-      image: "/images/11/1.png",
+      image: "/images/7/1.png",
       isCorrect: true,
     },
     {
-      image: "/images/11/2.png",
-      isCorrect: false,
-    },
-    {
-      image: "/images/11/3.png",
-      isCorrect: false,
-    },
-    {
-      image: "/images/11/4.png",
-      isCorrect: false,
-    },
-    {
-      image: "/images/11/5.png",
+      image: "/images/7/2.png",
       isCorrect: true,
     },
     {
-      image: "/images/11/6.png",
+      image: "/images/7/3.png",
       isCorrect: false,
     },
     {
-      image: "/images/11/7.png",
+      image: "/images/7/4.png",
+      isCorrect: true,
+    },
+    {
+      image: "/images/7/5.png",
+      isCorrect: true,
+    },
+    {
+      image: "/images/7/6.png",
+      isCorrect: true,
+    },
+    {
+      image: "/images/7/7.png",
       isCorrect: false,
     },
     {
-      image: "/images/11/8.png",
+      image: "/images/7/8.png",
       isCorrect: true,
     },
     {
-      image: "/images/11/9.png",
-      isCorrect: true,
+      image: "/images/7/9.png",
+      isCorrect: false,
     },
   ],
 };
@@ -207,49 +211,51 @@ export const levelData8 = {
   gridSize: 9,
   singleImageMode: true,
   images: ["/images/8/1.png"],
+  hintSite: "https://knowyourmeme.com/memes/loss",
   correctAnswers: [1, 2, 3, 4, 5, 6, 7, 8, 9],
 };
 
-export const levelData19 = {
-  prompt: "emojis available on iOS in 2020",
+export const levelData9 = {
+  prompt: "U.S. states that share a name with a Sufjan Stevens album",
   gridSize: 9,
   singleImageMode: false,
+  hintSite: "https://en.wikipedia.org/wiki/Sufjan_Stevens_discography",
   images: [
     {
-      image: "/images/19/1.png",
+      image: "/images/9/1.png",
       isCorrect: true,
     },
     {
-      image: "/images/19/2.png",
+      image: "/images/9/2.png",
       isCorrect: false,
     },
     {
-      image: "/images/19/3.png",
+      image: "/images/9/3.png",
       isCorrect: false,
     },
     {
-      image: "/images/19/4.png",
-      isCorrect: true,
-    },
-    {
-      image: "/images/19/5.png",
-      isCorrect: true,
-    },
-    {
-      image: "/images/19/6.png",
-      isCorrect: true,
-    },
-    {
-      image: "/images/19/7.png",
-      isCorrect: true,
-    },
-    {
-      image: "/images/19/8.png",
+      image: "/images/9/4.png",
       isCorrect: false,
     },
     {
-      image: "/images/19/9.png",
+      image: "/images/9/5.png",
+      isCorrect: false,
+    },
+    {
+      image: "/images/9/6.png",
+      isCorrect: false,
+    },
+    {
+      image: "/images/9/7.png",
       isCorrect: true,
+    },
+    {
+      image: "/images/9/8.png",
+      isCorrect: false,
+    },
+    {
+      image: "/images/9/9.png",
+      isCorrect: false,
     },
   ],
 };
@@ -298,10 +304,119 @@ export const levelData10 = {
   ],
 };
 
+export const levelData11 = {
+  prompt: "chemical element abbreviations",
+  gridSize: 9,
+  singleImageMode: false,
+  hintSite: "https://en.wikipedia.org/wiki/Periodic_table",
+  images: [
+    {
+      image: "/images/11/1.png",
+      isCorrect: true,
+    },
+    {
+      image: "/images/11/2.png",
+      isCorrect: false,
+    },
+    {
+      image: "/images/11/3.png",
+      isCorrect: false,
+    },
+    {
+      image: "/images/11/4.png",
+      isCorrect: false,
+    },
+    {
+      image: "/images/11/5.png",
+      isCorrect: true,
+    },
+    {
+      image: "/images/11/6.png",
+      isCorrect: false,
+    },
+    {
+      image: "/images/11/7.png",
+      isCorrect: false,
+    },
+    {
+      image: "/images/11/8.png",
+      isCorrect: true,
+    },
+    {
+      image: "/images/11/9.png",
+      isCorrect: true,
+    },
+  ],
+};
+
+export const levelData12 = {
+  prompt: "Wordle tiles that should be yellow",
+  gridSize: 25,
+  singleImageMode: true,
+  images: ["/images/12/1.png"],
+  correctAnswers: [4, 5, 6, 7, 9, 10, 11, 12, 13, 15, 20],
+  hintSite: "https://www.nytimes.com/games/wordle/index.html",
+};
+
+export const levelData13 = {
+  prompt: "animals mentioned in a song by The Beatles",
+  gridSize: 9,
+  singleImageMode: false,
+  hintSite: "https://www.beatlesagain.com/btlyrics.html",
+  images: [
+    {
+      image: "/images/13/1.png",
+      isCorrect: true,
+    },
+    {
+      image: "/images/13/2.png",
+      isCorrect: true,
+    },
+    {
+      image: "/images/13/3.png",
+      isCorrect: true,
+    },
+    {
+      image: "/images/13/4.png",
+      isCorrect: true,
+    },
+    {
+      image: "/images/13/5.png",
+      isCorrect: true,
+    },
+    {
+      image: "/images/13/6.png",
+      isCorrect: true,
+    },
+    {
+      image: "/images/13/7.png",
+      isCorrect: false,
+    },
+    {
+      image: "/images/13/8.png",
+      isCorrect: false,
+    },
+    {
+      image: "/images/13/9.png",
+      isCorrect: false,
+    },
+  ],
+};
+
+export const levelData14 = {
+  prompt:
+    "a bear, a plane, a small silver jack, a yellow pencil, or a red thumbtack",
+  gridSize: 16,
+  singleImageMode: true,
+  images: ["/images/14/1.png"],
+  correctAnswers: [3, 5, 7, 16],
+};
+
 export const levelData15 = {
   prompt: "things mentioned in the song We Didn't Start the Fire",
   gridSize: 9,
   singleImageMode: false,
+  hintSite: "https://genius.com/Billy-joel-we-didnt-start-the-fire-lyrics",
   images: [
     {
       image: "/images/15/1.png",
@@ -337,111 +452,6 @@ export const levelData15 = {
     },
     {
       image: "/images/15/9.png",
-      isCorrect: false,
-    },
-  ],
-};
-
-export const levelData12 = {
-  prompt: "Wordle tiles that should be yellow",
-  gridSize: 25,
-  singleImageMode: true,
-  images: ["/images/12/1.png"],
-  correctAnswers: [4, 5, 6, 7, 9, 10, 11, 12, 13, 15, 20],
-};
-
-export const levelData9 = {
-  prompt: "U.S. states that share a name with a Sufjan Stevens album",
-  gridSize: 9,
-  singleImageMode: false,
-  images: [
-    {
-      image: "/images/9/1.png",
-      isCorrect: true,
-    },
-    {
-      image: "/images/9/2.png",
-      isCorrect: false,
-    },
-    {
-      image: "/images/9/3.png",
-      isCorrect: false,
-    },
-    {
-      image: "/images/9/4.png",
-      isCorrect: false,
-    },
-    {
-      image: "/images/9/5.png",
-      isCorrect: false,
-    },
-    {
-      image: "/images/9/6.png",
-      isCorrect: false,
-    },
-    {
-      image: "/images/9/7.png",
-      isCorrect: true,
-    },
-    {
-      image: "/images/9/8.png",
-      isCorrect: false,
-    },
-    {
-      image: "/images/9/9.png",
-      isCorrect: false,
-    },
-  ],
-};
-
-export const levelData14 = {
-  prompt:
-    "a bear, a plane, a small silver jack, a yellow pencil, or a red thumbtack",
-  gridSize: 16,
-  singleImageMode: true,
-  images: ["/images/14/1.png"],
-  correctAnswers: [3, 5, 7, 16],
-};
-
-export const levelData7 = {
-  prompt: "fonts displayed in their own typeface",
-  gridSize: 9,
-  singleImageMode: false,
-  images: [
-    {
-      image: "/images/7/1.png",
-      isCorrect: true,
-    },
-    {
-      image: "/images/7/2.png",
-      isCorrect: true,
-    },
-    {
-      image: "/images/7/3.png",
-      isCorrect: false,
-    },
-    {
-      image: "/images/7/4.png",
-      isCorrect: true,
-    },
-    {
-      image: "/images/7/5.png",
-      isCorrect: true,
-    },
-    {
-      image: "/images/7/6.png",
-      isCorrect: true,
-    },
-    {
-      image: "/images/7/7.png",
-      isCorrect: false,
-    },
-    {
-      image: "/images/7/8.png",
-      isCorrect: true,
-    },
-    {
-      image: "/images/7/9.png",
       isCorrect: false,
     },
   ],
@@ -491,98 +501,101 @@ export const levelData16 = {
   ],
 };
 
-export const levelData5 = {
-  prompt: "real company logos",
+export const levelData17 = {
+  prompt: "people who were alive in 1955",
   gridSize: 9,
   singleImageMode: false,
+  hintSite: "https://stillaround.app/",
   images: [
     {
-      image: "/images/5/1.png",
+      image: "/images/17/1.png",
       isCorrect: true,
     },
     {
-      image: "/images/5/2.png",
-      isCorrect: false,
-    },
-    {
-      image: "/images/5/3.png",
-      isCorrect: false,
-    },
-    {
-      image: "/images/5/4.png",
-      isCorrect: false,
-    },
-    {
-      image: "/images/5/5.png",
-      isCorrect: false,
-    },
-    {
-      image: "/images/5/6.png",
+      image: "/images/17/2.png",
       isCorrect: true,
     },
     {
-      image: "/images/5/7.png",
+      image: "/images/17/3.png",
       isCorrect: true,
     },
     {
-      image: "/images/5/8.png",
+      image: "/images/17/4.png",
+      isCorrect: true,
+    },
+    {
+      image: "/images/17/5.png",
+      isCorrect: true,
+    },
+    {
+      image: "/images/17/6.png",
+      isCorrect: true,
+    },
+    {
+      image: "/images/17/7.png",
       isCorrect: false,
     },
     {
-      image: "/images/5/9.png",
-      isCorrect: true,
+      image: "/images/17/8.png",
+      isCorrect: false,
+    },
+    {
+      image: "/images/17/9.png",
+      isCorrect: false,
     },
   ],
 };
 
 export const levelData18 = {
-  prompt: "sudoku boxes where the number 6 belongs",
+  prompt: "Sudoku boxes where the number 6 belongs",
   gridSize: 9,
   singleImageMode: true,
   images: ["/images/18/1.png"],
   correctAnswers: [1, 2, 3, 4, 5, 6, 7, 8, 9],
+  hintSite: "https://en.wikipedia.org/wiki/Sudoku",
 };
 
-export const levelData13 = {
-  prompt: "animals mentioned in a song by The Beatles",
+export const levelData19 = {
+  prompt: "emojis available on iOS in 2020",
   gridSize: 9,
   singleImageMode: false,
+  hintSite: "https://emojipedia.org/apple/ios-14.2",
   images: [
     {
-      image: "/images/13/1.png",
+      image: "/images/19/1.png",
       isCorrect: true,
     },
     {
-      image: "/images/13/2.png",
-      isCorrect: true,
-    },
-    {
-      image: "/images/13/3.png",
-      isCorrect: true,
-    },
-    {
-      image: "/images/13/4.png",
-      isCorrect: true,
-    },
-    {
-      image: "/images/13/5.png",
-      isCorrect: true,
-    },
-    {
-      image: "/images/13/6.png",
-      isCorrect: true,
-    },
-    {
-      image: "/images/13/7.png",
+      image: "/images/19/2.png",
       isCorrect: false,
     },
     {
-      image: "/images/13/8.png",
+      image: "/images/19/3.png",
       isCorrect: false,
     },
     {
-      image: "/images/13/9.png",
+      image: "/images/19/4.png",
+      isCorrect: true,
+    },
+    {
+      image: "/images/19/5.png",
+      isCorrect: true,
+    },
+    {
+      image: "/images/19/6.png",
+      isCorrect: true,
+    },
+    {
+      image: "/images/19/7.png",
+      isCorrect: true,
+    },
+    {
+      image: "/images/19/8.png",
       isCorrect: false,
+    },
+    {
+      image: "/images/19/9.png",
+      isCorrect: true,
     },
   ],
 };
@@ -591,6 +604,7 @@ export const levelData20 = {
   prompt: "ingredients in the perfect egg bite",
   gridSize: 9,
   singleImageMode: false,
+  hintSite: "https://youtu.be/ktVIQZ7tiag",
   images: [
     {
       image: "/images/20/1.png",
@@ -635,6 +649,7 @@ export const levelData21 = {
   prompt: "real national flags",
   gridSize: 9,
   singleImageMode: false,
+  hintSite: "https://en.wikipedia.org/wiki/Gallery_of_sovereign_state_flags",
   images: [
     {
       image: "/images/21/1.png",

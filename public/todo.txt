@@ -7,7 +7,7 @@ SelectGrid: Gap between images, 3x3 or 4x4
 SelectFooter: Just a reset button MUI button and skip/verify button
 
 July 31st
-Found cat picl
+Found cat pic
 Created single image mode for SelectGrid
 Created pic naming schema
 Added waldo pic and level 2
@@ -109,12 +109,16 @@ Create game portfolio image
 Create about page share image
 
 August 21st
+Update my website's about page
+Add share images to my website
+Add game to my website
+Updated my website's questions page
+My own testing on phone desktop
+Soft launch
+Add hint for waldos and all tedious prompts
 
 
 ~*~*~*~*~*~
 TODO:
-Update my website's about page
-Add share images to my website
-Add game to my website
-My own testing on phone / ipad / desktop
-Soft launch with GYG / coders / Pranab
+
+Add JS obfuscation

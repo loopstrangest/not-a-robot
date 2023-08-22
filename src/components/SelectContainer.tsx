@@ -13,7 +13,7 @@ type SelectContainerProps = {
   setLevel: any;
   levelData: {
     prompt: string;
-
+    hintSite?: string;
     gridSize: number;
     singleImageMode: boolean;
     images:
@@ -106,28 +106,15 @@ const SelectContainer: React.FC<SelectContainerProps> = ({
 
   let modifiedPrompt: string | React.JSX.Element = levelData.prompt;
   if (incorrectGuessCount >= 2) {
-    if (levelData.prompt === "loss") {
+    if (levelData.hintSite) {
       modifiedPrompt = (
         <span>
           <a
-            href="https://knowyourmeme.com/memes/loss"
+            href={levelData.hintSite}
             target="_blank"
             rel="noopener noreferrer"
           >
-            loss
-          </a>
-        </span>
-      );
-    } else if (levelData.prompt === "ingredients in the perfect egg bite") {
-      modifiedPrompt = (
-        <span>
-          ingredients in{" "}
-          <a
-            href="https://youtu.be/ktVIQZ7tiag"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            the perfect egg bite
+            {levelData.prompt}
           </a>
         </span>
       );
