@@ -115,10 +115,14 @@ Add game to my website
 Updated my website's questions page
 My own testing on phone desktop
 Soft launch
-Add hint for waldos and all tedious prompts
+Add hint for all tedious prompts
+Added JS obfuscation
 
+August 23rd
+Made demo video
+Made small portfolio image
+Added project info to website portfolio
 
-~*~*~*~*~*~
-TODO:
-
-Add JS obfuscation
+August 24th
+HARD LAUNCHED
+Removed console log

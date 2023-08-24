@@ -99,7 +99,6 @@ const SelectContainer: React.FC<SelectContainerProps> = ({
           )
           .filter((index) => index !== -1);
         setCorrectAnswers(newCorrectAnswers);
-        console.log("newCorrectAnswers", newCorrectAnswers);
       }
     }
   }, [levelData]);

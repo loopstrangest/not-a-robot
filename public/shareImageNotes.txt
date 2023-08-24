@@ -2,4 +2,5 @@ From neal.fun:
 
 og:image AND twitter:image
 https://neal.fun/share-cards/password-game.png?v=2
-png, 1200 x 630
+png: 1200 x 630
+video: 1102 x 720
