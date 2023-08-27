@@ -8,9 +8,11 @@ import HomeIcon from "@mui/icons-material/Home";
 import PlaceholderIcon from "@mui/icons-material/HelpOutline";
 import { useEffect, useState } from "react";
 
-const EndScreen: React.FC<{ setLevel: (level: number) => void }> = ({
-  setLevel,
-}) => {
+interface GameEasyProps {
+  setGameMode: React.Dispatch<React.SetStateAction<string | null>>;
+}
+
+const EndScreen: React.FC<GameEasyProps> = ({ setGameMode }) => {
   const [showMessage1, setShowMessage1] = useState(false);
   const [showButton1, setShowButton1] = useState(false);
   const [showButton2, setShowButton2] = useState(false);
@@ -62,7 +64,7 @@ const EndScreen: React.FC<{ setLevel: (level: number) => void }> = ({
       </Fade>
       <Fade in={showButton1}>
         <Button
-          onClick={() => setLevel(0)}
+          onClick={() => setGameMode(null)}
           sx={{
             mt: 2,
             mb: 2,

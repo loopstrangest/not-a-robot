@@ -1,0 +1,34 @@
+/** @format */
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* This ensures the container takes the full height of the viewport */
+}
+
+.menu-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Takes full width of the parent container */
+  height: 100%; /* Takes full height of the parent container */
+}
+
+.menu-button {
+  cursor: pointer;
+  margin: 20px;
+  text-align: center;
+  padding: 8px;
+}
+
+.menu-button p {
+  font-family: "Orbitron", sans-serif;
+  font-size: 42px;
+  line-height: 1;
+}
+
+.menu-button:hover {
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}

@@ -126,3 +126,13 @@ Added project info to website portfolio
 August 24th
 HARD LAUNCHED
 Removed console log
+
+August 26th
+Created GameEasy.tsx
+Filled out GameEasy with 8 easy levels
+Made menu images: easy, hard
+Created Menu with easy and hard links
+Updated EndScreen Play Again button
+Tested changes
+Recorded demo video
+Updated website

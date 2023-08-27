@@ -1,10 +1,12 @@
+/** @format */
+
 import * as React from "react";
-import Game from "./components/Game.tsx";
+import Menu from "./components/Menu";
 
 function App() {
   return (
     <div className="App">
-      <Game />
+      <Menu />
     </div>
   );
 }

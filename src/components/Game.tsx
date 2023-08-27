@@ -36,7 +36,11 @@ import {
 } from "../utils/levelData";
 import "../styles/GameStyles.css";
 
-const Game = () => {
+interface GameProps {
+  setGameMode: React.Dispatch<React.SetStateAction<string | null>>;
+}
+
+const Game: React.FC<GameProps> = ({ setGameMode }) => {
   const initialLevel = 0;
   const [level, setLevel] = useState(initialLevel);
   const [fadeOutClass, setFadeOutClass] = useState("");
@@ -301,7 +305,7 @@ const Game = () => {
             levelData={levelData25}
           />
         ) : (
-          <EndScreen setLevel={setLevel} />
+          <EndScreen setGameMode={setGameMode} />
         )}
       </Box>
     </Container>
